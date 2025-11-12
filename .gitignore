@@ -1,0 +1,14 @@
+﻿# Frontend
+node_modules/
+dist/
+.env
+
+# Backend
+../backend/venv/
+../backend/.env
+../backend/**/__pycache__/
+../backend/**/*.pyc
+
+# Comunes
+.DS_Store
+*.log

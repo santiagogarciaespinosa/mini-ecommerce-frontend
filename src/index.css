@@ -1,0 +1,22 @@
+/* src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Ajustes de tipografía/scroll opcionales */
+:root {
+  color-scheme: light dark;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  @apply bg-lightBackground text-lightText dark:bg-darkBackground dark:text-darkText;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
