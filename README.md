@@ -106,41 +106,42 @@ npm run reset:products
 
 frontend/
 ├─ src/
-│ ├─ components/
-│ │ ├─ admin/
-│ │ │ ├─ ProductCardsMobile.tsx (UI móvil – tarjetas y edición)
-│ │ │ ├─ ProductListTable.tsx (UI desktop – tabla y edición)
-│ │ │ └─ ProductForm.tsx (Crear productos)
-│ │ ├─ cart/
-│ │ │ └─ QtyControl.tsx
-│ │ └─ ThemeToggle.tsx
-│ ├─ context/
-│ │ ├─ cartContext.tsx (lógica de add/update/remove/clear)
-│ │ └─ ProductsContext.tsx (fetch/cache productos)
-│ ├─ pages/
-│ │ ├─ Home.tsx
-│ │ ├─ ProductList.tsx
-│ │ ├─ Cart.tsx (guardar carrito + botón “Ver guardado”)
-│ │ ├─ CartSaved.tsx (ver/restaurar snapshot guardado)
-│ │ ├─ Checkout.tsx
-│ │ ├─ CheckoutSuccess.tsx
-│ │ └─ AdminProducts.tsx (panel CRUD responsive)
-│ ├─ services/
-│ │ └─ api.ts (Axios con baseURL normalizado)
-│ ├─ utils/
-│ │ ├─ formatMoney.ts (formateo COP centralizado)
-│ │ └─ cartSnapshot.ts (snapshot en localStorage)
-│ ├─ constants/
-│ │ └─ categories.ts (categorías canónicas)
-│ ├─ types.ts
-│ ├─ App.tsx (rutas SPA)
-│ └─ main.tsx
+│  ├─ components/
+│  │  ├─ admin/
+│  │  │  ├─ ProductCardsMobile.tsx   # UI móvil – tarjetas y edición
+│  │  │  ├─ ProductListTable.tsx     # UI desktop – tabla y edición
+│  │  │  └─ ProductForm.tsx          # Crear productos
+│  │  ├─ cart/
+│  │  │  └─ QtyControl.tsx
+│  │  └─ ThemeToggle.tsx
+│  ├─ context/
+│  │  ├─ cartContext.tsx             # Lógica add/update/remove/clear
+│  │  └─ ProductsContext.tsx         # Fetch/cache productos
+│  ├─ pages/
+│  │  ├─ Home.tsx
+│  │  ├─ ProductList.tsx
+│  │  ├─ Cart.tsx                    # Guardar carrito + botón “Ver guardado”
+│  │  ├─ CartSaved.tsx               # Ver/restaurar snapshot guardado
+│  │  ├─ Checkout.tsx
+│  │  ├─ CheckoutSuccess.tsx
+│  │  └─ AdminProducts.tsx           # Panel CRUD responsive
+│  ├─ services/
+│  │  └─ api.ts                      # Axios con baseURL normalizado
+│  ├─ utils/
+│  │  ├─ formatMoney.ts              # Formateo COP centralizado
+│  │  └─ cartSnapshot.ts             # Snapshot en localStorage
+│  ├─ constants/
+│  │  └─ categories.ts               # Categorías canónicas
+│  ├─ types.ts
+│  ├─ App.tsx                        # Rutas SPA
+│  └─ main.tsx
 ├─ scripts/
-│ ├─ seed-products.mjs
-│ └─ reset-products.mjs
+│  ├─ seed-products.mjs
+│  └─ reset-products.mjs
 ├─ index.html
 ├─ tailwind.config.js
-└─ vite.config.ts (alias "@/..." → src)
+└─ vite.config.ts                    # Alias "@/..." → src
+
 
 🗺️ Rutas (SPA)
 
